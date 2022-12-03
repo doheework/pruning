@@ -1,91 +1,22 @@
-.invade{
-    display: flex;
-}
-
-.montserrat, .lobster, .fuzzy{
-    text-align:center;
-    flex-grow: 1;
-    padding:10px;
-}
-
 @font-face {
-    font-family:'montserrat';
-    src: url(./font/Montserrat_complete-Medium.woff) format('woff');
-}
-
-@font-face {
-    font-family:'lobster';
-    src: url(./font/Lobster_complete-Regular.woff) format('woff');
-}
-
-@font-face {
-    font-family: 'fuzzy';
-    src: url(./font/FuzzyBubbles_complete-Regular.woff) format('woff');
-}
-.montserrat {
-    font-family:montserrat;
-    letter-spacing:0.3em;
-    line-height:3em;
-}
-
-.lobster {
-    font-family: lobster;
-    letter-spacing:0.3em;
-    line-height:3em;
-}
-
-.fuzzy {
-    font-family: fuzzy;
-    letter-spacing:0.3em;
-    line-height:3em;
-}
-
-.montserrat_type {
-    width:97%;
-    height:100px;
-    font-family: montserrat;
-    letter-spacing:0.3em;
-    line-height : 5em;
-    font-size:2em;
-}
-
-.lobster_type {
-    width:97%;
-    height:100px;
-    font-family: lobster;
-    letter-spacing:0.3em;
-    line-height : 5em;
-    font-size:2em;
-}
-
-.fuzzy_type {
-    width:97%;
-    height:100px;
-    font-family: fuzzy;
-    letter-spacing:0.3em;
-    line-height : 5em;
-    font-size:2em;
-}
-
-
-.montserrattype {
-    animation: typing 40s steps(100);
-}
-
-.lobstertype {
-    animation: typing 50s steps(172);
-}
-
-.fuzzytype{
-    animation: typing 30s steps(111);
-}
-
-@keyframes typing {
-    from{
-        width: 0;
-    }
-    to{
-        width: 100%;
+    font-family: "pruning";
+    src: url(pruning_va2VF.ttf) format("truetype-variations");
     
-    }
 }
+
+body{
+    text-align:center;
+}
+
+:root{
+    --font-pruning: 200;
+}
+
+.title{
+    text-align:center;
+    font-family: "pruning";
+    font-variation-settings: 'wght' var(--font-pruning) ;
+    font-size: 27vw;
+}
+
+
