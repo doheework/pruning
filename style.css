@@ -1,22 +1,155 @@
 @font-face {
     font-family: "pruning";
     src: url(pruning_va2VF.ttf) format("truetype-variations");
-    
 }
+
+.slidecontainer{
+    font-family: tarif-arabic, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    position:absolute;
+    right:20px;
+    text-align:right;
+    bottom: 10px;
+    font-size:30px;
+
+    padding-left:30px;
+}
+
+
+.sliderer{
+    line-height:0px;
+}
+
+.alert{
+   font-size:16px;
+   text-align:left;
+}
+
+.hey {
+    color: #fd7600;
+    animation: progress 4s infinite;
+    font-size:20px;
+}
+
+.range{
+    -webkit-appearance: none;
+    background: #fd7600;
+}
+
+#value, #per {
+    font-size:28px;
+    color: #fd7600;
+}
+
+.progress{
+    animation: progress 4s infinite;
+}
+
+.indication{
+    font-size:15px;
+    line-height:20px;
+}
+
+
+
+.tree1, .tree2, .tree3, .tree4, .tree5, .tree6, .tree7, .tree8, .tree9, .tree10, .tree11 {
+    position:absolute;
+    z-index:-3;
+    bottom:-20px;
+    left:50%;
+    transform:translate(-50%, 0);
+    max-width: 110%;
+    max-height: 120%;
+}
+
+
+.tree2 {
+    opacity: var(--tree2);
+}
+
+.tree3 {
+    opacity: var(--tree3);
+}
+
+.tree4 {
+    opacity: var(--tree4);
+}
+.tree5 {
+    opacity: var(--tree5);
+}
+.tree6 {
+    opacity: var(--tree6);
+}
+.tree7 {
+    opacity: var(--tree7);
+}
+.tree8 {
+    opacity: var(--tree8);
+}
+.tree9 {
+    opacity: var(--tree9);
+}
+
+.tree10 {
+    opacity: var(--tree10);
+}
+
+.tree11 {
+    opacity: var(--tree11);
+}
+
+.font {
+    bottom: 10px;}
 
 body{
     text-align:center;
 }
 
 :root{
-    --font-pruning: 200;
+    --font-pruning: 10;
+    --tree2: 100%;
+    --tree3: 100%;
+    --tree4: 100%;
+    --tree5: 100%;
+    --tree6: 100%;
+    --tree7: 100%;
+    --tree8: 100%;
+    --tree9: 100%;
+    --tree10: 100%;
+    --tree11: 100%;
+    --blink: none;
 }
 
 .title{
+    position:absolute;
     text-align:center;
+    top:30px;
     font-family: "pruning";
     font-variation-settings: 'wght' var(--font-pruning) ;
-    font-size: 27vw;
+    line-height: 19vw;
+    font-size: 20vw;
+    animation: var(--blink);
 }
 
+.small{
+    font-family: "pruning";
+    font-variation-settings: 'wght' var(--font-pruning) ;
+}
+
+@keyframes blinkingText{
+    0%		{ color: black;}
+    30%	{ color: #7B9445;}
+    40%	{ color: #fd7600;}
+    60%	{ color: #fd7600;}
+    70%	{ color: #7B9445;}
+    100%		{ color: black;}
+}
+
+@keyframes progress{
+    0%		{ color: black;}
+    40%	{ color: #fd7600;}
+    60%	{ color: #fd7600;}
+    100%		{ color: black;}
+}
 
